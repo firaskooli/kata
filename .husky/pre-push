@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run test
-ng build --aot true
+npm run test -- --watch=false
+npm run build
