@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-logo" data-test="card-logo">
+        <img src="assets/images/cart.png" />
+    </div>
+    <div class="card-body">
+        <h2 class="card-title" data-test="card-title">Basket {{ basket.id }}</h2>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let order of basket.orders" data-test="cart-product">
+                {{ order.product.label }}
+                <span class="badge badge-primary badge-pill"> {{ order.quantity }}</span>
+            </li>
+        </ul>
+        <button class="btn btn-primary" data-test="order-btn">Commander</button>
+    </div>
+</div>
