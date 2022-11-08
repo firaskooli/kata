@@ -1,13 +1,4 @@
-<div class="container">
-    <div class="row">
-        <div class="card-group">
-            <app-basket-card
-                *ngFor="let basket of baskets"
-                class="col"
-                [basket]="basket"
-                data-test="basket-card"
-            ></app-basket-card>
-        </div>
-    </div>
+<div class="flex-container">
+    <app-basket-card *ngFor="let basket of baskets" [basket]="basket" data-test="basket-card"></app-basket-card>
 </div>
 <app-invoice-modal></app-invoice-modal>

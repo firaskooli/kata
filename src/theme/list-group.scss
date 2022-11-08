@@ -1,19 +1,9 @@
 .list-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    @extend .d-flex;
+    @extend .direction-column;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    .list-group-item {
-        position: relative;
-        padding: 0.5rem;
-        background-color: #fff;
-    }
     .badge {
         display: inline-block;
         padding: 0.25em 0.4em;
