@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { Basket } from '../shared/models/basket';
-import { BasketsService } from './baskets.service';
+import { Basket } from 'src/app/shared/models/basket';
+import { BasketsService } from '../services/baskets.service';
 
 @Injectable({
     providedIn: 'root',

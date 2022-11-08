@@ -3,8 +3,8 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { of } from 'rxjs';
-import { SharedModule } from '../shared/shared.module';
-import { ShellModule } from '../shell/shell.module';
+import { SharedModule } from '../../shared/shared.module';
+import { ShellModule } from '../../shell/shell.module';
 
 import { BasketsService } from './baskets.service';
 
@@ -27,7 +27,7 @@ describe('BasketsService', () => {
     it('should be fetch All baskets', fakeAsync(() => {
         const spy = jasmine.createSpy('spy');
 
-        const baskets = require('../../assets/baskets.json');
+        const baskets = require('../../../assets/baskets.json');
 
         spyOn(httpClient, 'get').and.returnValue(of(baskets));
 

@@ -45,9 +45,10 @@
                     "label": "Boîtes de chocolats importée",
                     "price": 10,
                     "category": {
-                        "label": "IMPORTED_PRODUCTS",
-                        "tax": 5
-                    }
+                        "label": "ESSENTIAL_PRODCUTS",
+                        "tax": 0
+                    },
+                    "isImported": true
                 },
                 "quantity": 2
             },
@@ -56,9 +57,10 @@
                     "label": "Flacons de parfum importé",
                     "price": 47.5,
                     "category": {
-                        "label": "IMPORTED_PRODUCTS",
-                        "tax": 5
-                    }
+                        "label": "OTHER_PRODUCTS",
+                        "tax": 20
+                    },
+                    "isImported": true
                 },
                 "quantity": 3
             }
@@ -72,9 +74,10 @@
                     "label": "Flacons de parfum importé",
                     "price": 27.99,
                     "category": {
-                        "label": "IMPORTED_PRODUCTS",
-                        "tax": 5
-                    }
+                        "label": "OTHER_PRODUCTS",
+                        "tax": 20
+                    },
+                    "isImported": true
                 },
                 "quantity": 2
             },
@@ -105,9 +108,10 @@
                     "label": "Boîtes de chocolats importés",
                     "price": 11.25,
                     "category": {
-                        "label": "IMPORTED_PRODUCTS",
-                        "tax": 5
-                    }
+                        "label": "ESSENTIAL_PRODCUTS",
+                        "tax": 0
+                    },
+                    "isImported": true
                 },
                 "quantity": 2
             }

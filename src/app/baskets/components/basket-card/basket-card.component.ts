@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Basket } from 'src/app/shared/models/basket';
+import { ModalService } from 'src/app/shared/services/modal.service';
 
 @Component({
     selector: 'app-basket-card',
@@ -8,7 +9,12 @@ import { Basket } from 'src/app/shared/models/basket';
 })
 export class BasketCardComponent implements OnInit {
     @Input() basket!: Basket;
-    constructor() {}
+    constructor(private modalService: ModalService) {}
 
     ngOnInit(): void {}
+
+    openInvoiceModal() {
+        this.modalService.open();
+        this.modalService.data = this.basket;
+    }
 }

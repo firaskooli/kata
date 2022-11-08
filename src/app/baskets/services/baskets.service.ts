@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Basket } from '../shared/models/basket';
+import { Basket } from 'src/app/shared/models/basket';
 
 @Injectable({
     providedIn: 'root',

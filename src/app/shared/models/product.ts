@@ -4,4 +4,5 @@ export interface Product {
     label: string;
     price: number;
     category: ProductCategory;
+    isImported?: boolean;
 }

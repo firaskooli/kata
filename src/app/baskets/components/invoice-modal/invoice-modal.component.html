@@ -1,0 +1,13 @@
+<app-modal *ngIf="invoice" data-test="invoice-modal">
+    <h1 modal-header class="text-center" data-test="invoice-modal-header">Facture</h1>
+    <div modal-body data-test="invoice-modal-body">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let orderInvoice of invoice.ordersInvoices" data-test="order-invoice">
+                {{ orderInvoice.order.quantity }} {{ orderInvoice.order.product.label }} à
+                {{ orderInvoice.order.product.price }}€ : {{ orderInvoice.pttc }}€ TTC
+            </li>
+        </ul>
+        <p data-test="invoice-tax-total-amount">Montant des taxes : {{ invoice.taxTotalAmount }}€</p>
+        <p data-test="invoice-total-amount">Total : {{ invoice.totalAmount }}€</p>
+    </div>
+</app-modal>

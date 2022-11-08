@@ -10,12 +10,15 @@
 .card {
     position: relative;
     border-radius: 25px;
-    padding: 20px 30px 0 30px;
+    padding: 20px;
     background: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     height: 100%;
     min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .card-logo {
         display: flex;
         align-items: center;
