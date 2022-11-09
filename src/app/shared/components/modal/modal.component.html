@@ -1,7 +1,7 @@
 <ng-container *ngIf="isOpened$ | async as isOpened">
     <section [class.open]="isOpened" (click)="close()">
         <div id="open-modal" class="modal-window" (click)="$event.stopPropagation()">
-            <a title="Close" class="modal-close" data-test="close-btn" (click)="close()">Fermer</a>
+            <a title="Close" class="close-btn" data-test="close-btn" (click)="close()">Fermer</a>
             <div data-test="modal-header">
                 <ng-content select="[modal-header]"></ng-content>
             </div>

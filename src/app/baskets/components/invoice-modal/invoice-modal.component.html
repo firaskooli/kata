@@ -1,13 +1,33 @@
 <app-modal *ngIf="invoice" data-test="invoice-modal">
-    <h1 modal-header class="text-center" data-test="invoice-modal-header">Facture</h1>
-    <div modal-body data-test="invoice-modal-body">
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let orderInvoice of invoice.ordersInvoices" data-test="order-invoice">
-                {{ orderInvoice.order.quantity }} {{ orderInvoice.order.product.label }} à
-                {{ orderInvoice.order.product.price }}€ : {{ orderInvoice.pttc }}€ TTC
-            </li>
-        </ul>
-        <p data-test="invoice-tax-total-amount">Montant des taxes : {{ invoice.taxTotalAmount }}€</p>
-        <p data-test="invoice-total-amount">Total : {{ invoice.totalAmount }}€</p>
+    <h1 modal-header class="text-center invoice-modal-header" data-test="invoice-modal-header">Facture</h1>
+    <div modal-body data-test="invoice-modal-body" class="d-flex direction-column">
+        <div class="align-items-center justify-content-center">
+            <ul class="list-group">
+                <li
+                    class="list-group-item"
+                    *ngFor="let orderInvoice of invoice.ordersInvoices"
+                    data-test="order-invoice"
+                >
+                    <p>
+                        <span>
+                            {{ orderInvoice.order.quantity }}
+                        </span>
+                        <span>
+                            {{ orderInvoice.order.product.label }}
+                        </span>
+                        <span> à {{ orderInvoice.order.product.price }}€ : </span>
+                        <span class="text-bold"> {{ orderInvoice.pttc }}€ TTC </span>
+                    </p>
+                </li>
+            </ul>
+            <p data-test="invoice-tax-total-amount">
+                <span>Montant des taxes : </span>
+                <span class="text-bold"> {{ invoice.taxTotalAmount }}€ </span>
+            </p>
+            <p data-test="invoice-total-amount">
+                <span>Total : </span>
+                <span class="text-bold"> {{ invoice.totalAmount }}€</span>
+            </p>
+        </div>
     </div>
 </app-modal>
