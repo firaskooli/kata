@@ -1,16 +1,11 @@
 @import '../../../../theme/theme-variables';
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $queen-pink;
-    color: white;
     font-weight: 600;
     .copyright {
         color: $fandango-pink;

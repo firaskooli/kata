@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "orders": [
+            {
+                "product": {
+                    "label": "Livres",
+                    "price": 12.49,
+                    "category": {
+                        "label": "BOOK",
+                        "tax": 10
+                    }
+                },
+                "quantity": 2
+            },
+            {
+                "product": {
+                    "label": "CD musical",
+                    "price": 14.99,
+                    "category": {
+                        "label": "OTHER_PRODUCTS",
+                        "tax": 20
+                    }
+                },
+                "quantity": 1
+            },
+            {
+                "product": {
+                    "label": "Barres de chocolat",
+                    "price": 0.85,
+                    "category": {
+                        "label": "ESSENTIAL_PRODCUTS",
+                        "tax": 0
+                    }
+                },
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "orders": [
+            {
+                "product": {
+                    "label": "Boîtes de chocolats importée",
+                    "price": 10,
+                    "category": {
+                        "label": "ESSENTIAL_PRODCUTS",
+                        "tax": 0
+                    },
+                    "isImported": true
+                },
+                "quantity": 2
+            },
+            {
+                "product": {
+                    "label": "Flacons de parfum importé",
+                    "price": 47.5,
+                    "category": {
+                        "label": "OTHER_PRODUCTS",
+                        "tax": 20
+                    },
+                    "isImported": true
+                },
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "orders": [
+            {
+                "product": {
+                    "label": "Flacons de parfum importé",
+                    "price": 27.99,
+                    "category": {
+                        "label": "OTHER_PRODUCTS",
+                        "tax": 20
+                    },
+                    "isImported": true
+                },
+                "quantity": 2
+            },
+            {
+                "product": {
+                    "label": "Flacon de parfum",
+                    "price": 18.99,
+                    "category": {
+                        "label": "OTHER_PRODUCTS",
+                        "tax": 20
+                    }
+                },
+                "quantity": 1
+            },
+            {
+                "product": {
+                    "label": "Boîtes de pilules contre la migraine",
+                    "price": 9.75,
+                    "category": {
+                        "label": "ESSENTIAL_PRODCUTS",
+                        "tax": 0
+                    }
+                },
+                "quantity": 3
+            },
+            {
+                "product": {
+                    "label": "Boîtes de chocolats importés",
+                    "price": 11.25,
+                    "category": {
+                        "label": "ESSENTIAL_PRODCUTS",
+                        "tax": 0
+                    },
+                    "isImported": true
+                },
+                "quantity": 2
+            }
+        ]
+    }
+]

@@ -5,6 +5,10 @@
 
 // Theme variables, must be included before the libraries to allow overriding defaults
 @import 'theme/theme-variables';
+@import 'theme/button';
+@import 'theme/card';
+@import 'theme/flex';
+@import 'theme/list-group';
 
 // 3rd party libraries
 

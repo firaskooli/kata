@@ -1,0 +1,45 @@
+section {
+    visibility: hidden;
+    opacity: 0;
+    &.open {
+        visibility: inherit;
+        opacity: 1;
+    }
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms ease-in;
+    > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        min-width: 300px;
+        min-height: 250px;
+        width: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .close-btn {
+        color: #aaa;
+        line-height: 50px;
+        font-size: 80%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 70px;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
